@@ -13,7 +13,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-
         <!-- CSS | bootstrap -->
         <!-- Credits: http://getbootstrap.com/ -->
         <link  rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
@@ -45,21 +44,31 @@
         <!-- Credits: http://www.no-margin-for-errors.com/ -->
         <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
 
+
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
 
         <!--[if IE 7]>
-                <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
         <![endif]-->
 
         <style>
+
+            @media only screen and (max-width : 1200px){
+                .resp-vtabs ul.resp-tabs-list {
+                    margin-left: 0 !important;
+                }
+            }
+
             @media only screen and (max-width : 991px){
                 .resp-vtabs .resp-tabs-container {
-                    margin-left: 0px !important;
+                    margin-left: 13px;
                 }
-                .resp-vtabs ul.resp-tabs-list {
-                    width: 10%;
-                    margin-right: 2px !important;
+            }
+
+			 @media only screen and (min-width : 800px) and (max-width : 991px){
+                .resp-vtabs .resp-tabs-container {
+					width:89%;
                 }
             }
 
@@ -68,21 +77,21 @@
                 .widget-profil {
                     float: none !important;
                 }
+				.resp-vtabs .resp-tabs-container {
+					width:100%;
+                }
             }
 
             .widget-profil {
-                float: right;
+                float: left;
             }
 
             .resp-vtabs ul.resp-tabs-list {
-                float: right;
-                margin-right:12px;
+                margin-left: 12px;
             }
-            .resp-vtabs .resp-tabs-container {
-                margin-left: 0px !important;
-            }	
-        </style>
 
+
+        </style>
 
     </head>
 
@@ -96,6 +105,7 @@
         <div id="preloader"><div id="spinner"></div></div>
 
 
+
         <!-- .slideshow -->
         <ul class="cb-slideshow" id="cb_slideshow" style="display:none">
             <li><span>Image 01</span><div></div></li>
@@ -105,12 +115,12 @@
             <li><span>Image 05</span><div></div></li>
             <li><span>Image 06</span><div></div></li>
         </ul>
-        <!-- /.slideshow --> 
+        <!-- /.slideshow -->
 
-        <!-- .wrapper --> 
+        <!-- .wrapper -->
         <div class="wrapper">
 
-            <!--- .Content --> 
+            <!--- .Content -->
             <section class="tab-content">
                 <div class="container">
 
@@ -118,7 +128,7 @@
 
                         <div class="col-md-12">
 
-                            <div class="row">   
+                            <div class="row">
 
                                 <div class="col-md-3 widget-profil">
 
@@ -126,11 +136,11 @@
 
     <!-- Profile Image -->
     <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12 ">
-    	 
-		 
-                                
+
+
+
          <div class="image-holder one" id="pic_prof_1" style="display:block">
-        
+
                 <img class="head-image up circle" src="images/img/up.png" width="150" height="150" alt="" />
                 <img class="head-image up-left circle" src="images/img/upleft.png" width="150" height="150" alt="" />
                 <img class="head-image left circle" src="images/img/left.png" width="150" height="150" alt="" />
@@ -140,28 +150,28 @@
                 <img class="head-image right circle" src="images/img/right.png" width="150" height="150" alt="" />
                 <img class="head-image up-right circle" src="images/img/upright.png" width="150" height="150" alt="" />
                 <img class="head-image front circle" src="images/img/front.png" width="150" height="150" alt="" />
-                
+
         </div>
-        
-        <!-- style for simple image profile -->		
+
+        <!-- style for simple image profile -->
    		<div class="circle-img" id="pic_prof_2" style="display:none"></div>
-       
-    
+
+
     </div>
     <!-- End Profile Image -->
-  
+
     <div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
-    
-    
+
+
         <!-- Profile info -->
         <div id="profile_info">
             <h1 id="name" class="transition-02">brown smith</h1>
             <h4 class="line">GRAPHIC &amp; WEB DESIGNER</h4>
             <h6><span class="fa fa-map-marker"></span> San Francisco , CA</h6>
         </div>
-        <!-- End Profile info -->  
-    	
-        
+        <!-- End Profile info -->
+
+
         <!-- Profile Description -->
         <div id="profile_desc">
             <p>
@@ -171,9 +181,9 @@
             	Lorem ipsum dolor sit amet, consectetur adipiscing eli
             </p>
         </div>
-        <!-- End Profile Description -->  
-    	
-        
+        <!-- End Profile Description -->
+
+
         <!-- Name -->
          <div id="profile_social">
             <h6>更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></h6>
@@ -184,12 +194,12 @@
             <a href="#"><i class="fa fa-foursquare"></i></a>
             <div class="clear"></div>
         </div>
-        <!-- End Name -->  
-      
-    
-    
+        <!-- End Name -->
+
+
+
     </div>
-  
+
 </div>
                                 </div>
 
@@ -199,17 +209,17 @@
                                     <div id="verticalTab">
 
                                         <ul class="resp-tabs-list">
-                                            <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">			
+                                            <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">
                                                 <span class="tite-list">profile</span>
                                                 <i class="fa fa-user icon_menu icon_menu_active"></i>
                                             </li>
 
-                                            <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume"> 
+                                            <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume">
                                                 <span class="tite-list">resume</span>
                                                 <i class="fa fa-tasks icon_menu"></i>
                                             </li>
 
-                                            <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio"> 
+                                            <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio">
                                                 <span class="tite-list">portfolio</span>
                                                 <i class="fa fa-briefcase icon_menu"></i>
                                             </li>
@@ -219,9 +229,9 @@
                                                 <i class="fa fa-bullhorn icon_menu"></i>
                                             </li>
 
-                                            <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;"> 
+                                            <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;">
                                                 <span class="tite-list">contact</span>
-                                                <i class="fa fa-envelope icon_menu"></i> 
+                                                <i class="fa fa-envelope icon_menu"></i>
                                             </li>
 
                                             <a href="#" id="print"><i class="fa fa-print icon_print"></i> </a>
@@ -232,7 +242,7 @@
 
 
 
-                                        <!-- resp-tabs-container --> 
+                                        <!-- resp-tabs-container -->
                                         <div class="resp-tabs-container">
 
                                             <!-- profile -->
@@ -242,7 +252,7 @@
 
 <div class="row top-p">
     <div class="col-md-6 profile-l">
- 		
+
         <!--About me-->
         <div class="title_content">
             <div class="text_content">brown smith</div>
@@ -265,7 +275,7 @@
                 <div class="clear"></div>
             </li>
 
-            <li> 
+            <li>
                 <i class="glyphicon glyphicon-map-marker"></i>
                 <label>Adress</label>
                 <span class="value">San Francisco , CA</span>
@@ -297,13 +307,13 @@
 
 
         <p style="margin-bottom:20px">
-            <i class="fa fa-quote-left"></i>       
+            <i class="fa fa-quote-left"></i>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.
         </p>
-        
+
          <p style="margin-bottom:20px">
-            <i class="fa fa-quote-left"></i>       
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. 
+            <i class="fa fa-quote-left"></i>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.
 
         </p>
 
@@ -331,8 +341,8 @@
                 <div class="text_content">My Services 1</div>
                 <div class="clear"></div>
             </div>
-    
-    
+
+
             <div class="col-md-4 pack-service">
                 <div class="service">
                     <div class="service-icon"><i class="fa fa-tag"></i></div>
@@ -360,13 +370,13 @@
                     </div>
                 </div>
             </div>
-         </div> 
+         </div>
     </div><!-- End Services -->
 
 
     <div class="clear"></div>
     <div class="border-list"></div>
-	
+
     <div class="row">
     <div class="col-md-12">
         <div class="bottom-p">
@@ -374,7 +384,7 @@
                 <div class="text_content">My Services 2</div>
                 <div class="clear"></div>
             </div>
-    
+
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -422,11 +432,11 @@
                     </div>
                 </div>
             </div>
-    
+
         </div>
  </div>
- 
- 
+
+
   </div>
     <div class="clear"></div>
                                             </div>
@@ -435,7 +445,7 @@
                                             <!-- .resume -->
                                             <div id="resume" class="content_2">
                                                 <!-- .title -->
-<h1 class="h-bloc">Resume - Personal Info</h1> 
+<h1 class="h-bloc">Resume - Personal Info</h1>
 
 <div class="row">
 
@@ -448,7 +458,7 @@
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <div class="skills">
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="95%">
@@ -456,9 +466,9 @@
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">95%</div>
             </div>
-    
+
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="90%">
                 <div class="skillbar-title"><span>Illustrateur</span></div>
@@ -466,7 +476,7 @@
                 <div class="skill-bar-percent">90%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="65%">
                 <div class="skillbar-title"><span>Indesign</span></div>
@@ -474,7 +484,7 @@
                 <div class="skill-bar-percent">65%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="35%">
                 <div class="skillbar-title"><span>Flash</span></div>
@@ -483,15 +493,15 @@
             </div>
             <!-- /.skillbar -->
         </div>
-        
-        
+
+
         <!-- .title_content -->
         <div class="title_content" style="float: none;">
             <div class="text_content">Programming Skills</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <div class="skills">
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="85%">
@@ -500,7 +510,7 @@
                 <div class="skill-bar-percent">85%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="75%">
                 <div class="skillbar-title"><span>Joomla</span></div>
@@ -508,7 +518,7 @@
                 <div class="skill-bar-percent">75%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="60%">
                 <div class="skillbar-title"><span>Drupal</span></div>
@@ -516,25 +526,25 @@
                 <div class="skill-bar-percent">60%</div>
             </div>
             <!-- /.skillbar -->
-            
+
              <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="89%">
                 <div class="skillbar-title"><span>Php</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">89%</div>
             </div>
-            <!-- /.skillbar --> 
+            <!-- /.skillbar -->
         </div>
-        
-         
+
+
         <!-- .title_content -->
         <div class="title_content" style="float: none;">
             <div class="text_content">Office Skills</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-            
-        <div class="skills">       
+
+        <div class="skills">
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="85%">
                 <div class="skillbar-title"><span>MS Excel</span></div>
@@ -542,7 +552,7 @@
                 <div class="skill-bar-percent">85%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="95%">
                 <div class="skillbar-title"><span>MS Word</span></div>
@@ -550,7 +560,7 @@
                 <div class="skill-bar-percent">95%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="60%">
                 <div class="skillbar-title"><span>Powerpoint</span></div>
@@ -558,24 +568,24 @@
                 <div class="skill-bar-percent">60%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="40%">
                 <div class="skillbar-title"><span>SharePoint</span></div>
                 <div class="skillbar-bar"></div>
                 <div class="skill-bar-percent">40%</div>
             </div>
-            <!-- /.skillbar -->   
+            <!-- /.skillbar -->
 		</div>
-        
-        
+
+
         <!-- .title_content -->
         <div class="title_content" style="float: none;">
             <div class="text_content">Hobbies Skills</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <div class="skills">
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="60%">
@@ -584,7 +594,7 @@
                 <div class="skill-bar-percent">60%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="95%">
                 <div class="skillbar-title"><span>Sport</span></div>
@@ -592,7 +602,7 @@
                 <div class="skill-bar-percent">95%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="85%">
                 <div class="skillbar-title"><span>Reading</span></div>
@@ -600,7 +610,7 @@
                 <div class="skill-bar-percent">85%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="70%">
                 <div class="skillbar-title"><span>Travelling</span></div>
@@ -609,15 +619,15 @@
             </div>
             <!-- /.skillbar -->
         </div>
-        
-        
+
+
         <!-- .title_content -->
         <div class="title_content" style="float: none;">
             <div class="text_content">Language Skills</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <div class="skills">
             <!-- .skillbar -->
             <div class="skillbar clearfix" data-percent="90%">
@@ -626,7 +636,7 @@
                 <div class="skill-bar-percent">90%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="80%">
                 <div class="skillbar-title"><span>French</span></div>
@@ -634,7 +644,7 @@
                 <div class="skill-bar-percent">80%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="50%">
                 <div class="skillbar-title"><span>Spanish</span></div>
@@ -642,7 +652,7 @@
                 <div class="skill-bar-percent">50%</div>
             </div>
             <!-- /.skillbar -->
-            
+
             <!-- .skillbar -->
             <div class="skillbar clearfix " data-percent="60%">
                 <div class="skillbar-title"><span>Swiss</span></div>
@@ -651,15 +661,15 @@
             </div>
             <!-- /.skillbar -->
         </div>
-        
-        
+
+
         <!-- .title_content -->
         <div class="title_content" style="float: none;">
             <div class="text_content">My Resume</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <!-- .download_resume -->
         <a class="download" style="margin:0;float: left;" href="#">
             <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download My Resume</span>
@@ -668,18 +678,18 @@
 
     </div>
      <!-- /.resume-right -->
-     
-     
-     
+
+
+
      <!-- .resume-left -->
-    <div class="col-md-6 resume-left">    
+    <div class="col-md-6 resume-left">
         <!-- .title_content -->
         <div class="title_content" style="margin-bottom:5px">
             <div class="text_content">Experience</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <!-- .attributes -->
         <ul class="attributes">
             <li class="first">
@@ -696,14 +706,14 @@
         </ul>
         <!-- /.attributes -->
         <br>
-        
+
         <!-- .title_content -->
         <div class="title_content">
             <div class="text_content">Education</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <!-- .attributes -->
         <ul class="attributes">
             <li class="first">
@@ -718,16 +728,16 @@
             </li>
         </ul>
         <!-- /.attributes -->
-        <br>  
-        
-        
+        <br>
+
+
           <!-- .title_content -->
         <div class="title_content">
             <div class="text_content">Awards</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
         <!-- .attributes -->
         <ul class="attributes">
             <li class="first">
@@ -740,31 +750,31 @@
                 <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
                 <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
             </li>
-  
+
         </ul>
         <!-- /.attributes -->
-        <br>  
-        
+        <br>
+
     </div>
     <!-- /.resume-left -->
 </div>
 
-  <div style="clear: both"></div>  
-  
-  
+  <div style="clear: both"></div>
+
+
 <!-- client reference -->
 <div class="row">
-    <div class="col-md-12">   
-    
-<div class="reference clearfix"> 
-            
+    <div class="col-md-12">
+
+<div class="reference clearfix">
+
          <!-- .title_content -->
         <div class="title_content" style="margin-bottom:5px">
             <div class="text_content">Client reference</div>
             <div class="clear"></div>
         </div>
         <!-- /.title_content -->
-        
+
 
         <ul>
             <li class="clearfix">
@@ -785,11 +795,11 @@
         </ul>
 </div>
  </div>
-     
-     
-     
-     
-     <div style="clear: both"></div>   
+
+
+
+
+     <div style="clear: both"></div>
 </div>
 
                                             </div>
@@ -797,7 +807,7 @@
 
                                             <!-- .portfolio -->
                                             <div id="portfolio" class="content_2">
-                                                
+
                                                 <!-- .title -->
                                                 <h1 class="h-bloc">Portfolio - My Works</h1>
 
@@ -813,14 +823,14 @@
                                                         <li><span class="filter" data-filter="logo">Logo</span></li>
                                                     </ul>
                                                     <!-- /#filters -->
-                                    
+
                                                     <!-- #portfoliolist -->
                                                     <div id="portfoliolist">
 
                                                         <!-- .portfolio -->
-                                                        <div class="portfolio logo" data-cat="logo">	
+                                                        <div class="portfolio logo" data-cat="logo">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">		
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
                                                                     <img src="images/portfolio/1.jpg" alt="Visual Infography" />
                                                                     <div class="label">
@@ -833,15 +843,15 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>		
+                                                        </div>
                                                         <!-- /.portfolio -->
 
- 
+
 
                                                         <!-- .portfolio -->
-                                                        <div class="portfolio catWeb" data-cat="catWeb">	
+                                                        <div class="portfolio catWeb" data-cat="catWeb">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">		
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY" rel="portfolio">
 
                                                                     <img src="images/portfolio/2.jpg" alt="Visual Infography" />
@@ -855,13 +865,13 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>		
+                                                        </div>
                                                         <!-- /.portfolio -->
- 
+
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catWeb" data-cat="catWeb">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">			
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/3.jpg" rel="portfolio">
                                                                     <img src="images/portfolio/3.jpg" alt="Sonor's Design" />
                                                                     <div class="label">
@@ -874,13 +884,13 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>				
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catMotion" data-cat="catMotion">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">			
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/4.jpg" rel="portfolio">
                                                                     <img src="images/portfolio/4.jpg" alt="Typography Company" />
                                                                     <div class="label">
@@ -893,7 +903,7 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
@@ -912,14 +922,14 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catMotion" data-cat="catMotion">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">		
-                                                                <a href="images/portfolio/6.jpg" rel="portfolio">				
+                                                            <div class="portfolio-wrapper">
+                                                                <a href="images/portfolio/6.jpg" rel="portfolio">
                                                                     <img src="images/portfolio/6.jpg" alt="BMF" />
                                                                     <div class="label">
                                                                         <div class="label-text">
@@ -931,14 +941,14 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catGraphic" data-cat="catGraphic">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">		
-                                                                <a href="images/portfolio/7.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">				
+                                                            <div class="portfolio-wrapper">
+                                                                <a href="images/portfolio/7.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
                                                                     <img src="images/portfolio/7.jpg" alt="Techlion" />
                                                                     <div class="label">
                                                                         <div class="label-text">
@@ -956,7 +966,7 @@
                                                         <!-- .portfolio -->
                                                         <div class="portfolio logo" data-cat="logo">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">		
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/8.jpg" rel="portfolio" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien.">
                                                                     <img src="images/portfolio/8.jpg" alt="KittyPic" />
                                                                     <div class="label">
@@ -969,13 +979,13 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catWeb" data-cat="catWeb">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">			
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/9.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
                                                                     <img src="images/portfolio/9.jpg" alt="Graph Plotting" />
                                                                     <div class="label">
@@ -988,13 +998,13 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio catGraphic" data-cat="catGraphic">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">	
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/10.jpg" rel="portfolio">
                                                                     <img src="images/portfolio/10.jpg" alt="QR Quick Response" />
                                                                     <div class="label">
@@ -1007,13 +1017,13 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
                                                         <div class="portfolio logo" data-cat="logo">
                                                             <!-- .portfolio-wrapper -->
-                                                            <div class="portfolio-wrapper">	
+                                                            <div class="portfolio-wrapper">
                                                                 <a href="images/portfolio/11.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
                                                                     <img src="images/portfolio/11.jpg" alt="Mobi Sock" />
                                                                     <div class="label">
@@ -1026,7 +1036,7 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <!-- .portfolio -->
@@ -1045,7 +1055,7 @@
                                                                 </a>
                                                             </div>
                                                             <!-- /.portfolio-wrapper -->
-                                                        </div>	
+                                                        </div>
                                                         <!-- /.portfolio -->
 
                                                         <div class="clear"></div>
@@ -1059,7 +1069,7 @@
 
                                             <!-- .blog -->
                                             <div id="blog" class="content_2">
-                                                <h1 class="h-bloc">Blog - My Blog</h1><br> 
+                                                <h1 class="h-bloc">Blog - My Blog</h1><br>
 
 <div class="col-md-12">
     <div class="row">
@@ -1069,8 +1079,8 @@
             <!-- start Page Blog -->
             <section id="blog-page">
 
-                <!-- Post 1 -->	
-                <article id="post-1" class="blog-article">                    
+                <!-- Post 1 -->
+                <article id="post-1" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1154,7 +1164,7 @@
                                         <div class="blog-content">
                                             <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo...</p></div>
                                     </div>
-                                </div>	
+                                </div>
 
                                 <a href="#post-1" class="read_m pull-right">Read More <i class='glyphicon glyphicon-chevron-right'></i></a>
 
@@ -1168,7 +1178,7 @@
                 <div class="clear"></div>
 
                 <!-- Post 2 -->
-                <article id="post-2" class="blog-article">                    
+                <article id="post-2" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1203,7 +1213,7 @@
                                         <div class="blog-content">
                                             <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo...</p></div>
                                     </div>
-                                </div>	
+                                </div>
 
                                 <a href="#post-2" class="read_m pull-right">Read More <i class='glyphicon glyphicon-chevron-right'></i></a>
 
@@ -1217,7 +1227,7 @@
                 <div class="clear"></div>
 
                 <!-- Post 3 -->
-                <article id="post-3" class="blog-article">                    
+                <article id="post-3" class="blog-article">
 
                     <div class="col-md-12">
 
@@ -1258,7 +1268,7 @@
                                         <div class="blog-content">
                                             <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo...</p></div>
                                     </div>
-                                </div>	
+                                </div>
 
                                 <a href="#post-3" class="read_m pull-right">Read More <i class='glyphicon glyphicon-chevron-right'></i></a>
 
@@ -1360,7 +1370,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="about_author">
@@ -1389,7 +1399,7 @@
                                     <div class="clear"></div>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="post_comments">
@@ -1495,7 +1505,7 @@
 
                                     </div><!-- .post_comments -->
 
-                                    <div class="clear"></div>      
+                                    <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1510,7 +1520,7 @@
                                                 <label for="name">Your Name</label>
                                                 <input type="text" name="name" class="form-control" id="inputSuccess" placeholder="Name*...">
                                             </p>
-                                            <p class="form-group" id="contact-email"> 
+                                            <p class="form-group" id="contact-email">
                                                 <label for="email">Your Email</label>
                                                 <input type="text" name="email" class="form-control" id="inputSuccess" placeholder="Email*...">
                                             </p>
@@ -1522,7 +1532,7 @@
                                             <input type="reset" name="reset" value="CLEAR" class="reset">
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
                                             <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
-                                        </form>                        
+                                        </form>
                                         <div class="clear"></div>
 
                                     </div>
@@ -1588,7 +1598,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="about_author">
@@ -1618,7 +1628,7 @@
                                     <div class="clear"></div>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="post_comments">
@@ -1724,7 +1734,7 @@
 
                                     </div><!-- .post_comments -->
 
-                                    <div class="clear"></div>      
+                                    <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1740,7 +1750,7 @@
                                                 <label for="name">Your Name</label>
                                                 <input type="text" name="name" class="form-control" id="inputSuccess" placeholder="Name*...">
                                             </p>
-                                            <p class="form-group" id="contact-email"> 
+                                            <p class="form-group" id="contact-email">
                                                 <label for="email">Your Email</label>
                                                 <input type="text" name="email" class="form-control" id="inputSuccess" placeholder="Email*...">
                                             </p>
@@ -1752,7 +1762,7 @@
                                             <input type="reset" name="reset" value="CLEAR" class="reset">
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
                                             <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
-                                        </form>                        
+                                        </form>
                                         <div class="clear"></div>
 
                                     </div>
@@ -1825,7 +1835,7 @@
                                     </ul>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="about_author">
@@ -1855,7 +1865,7 @@
                                     <div class="clear"></div>
                                 </div>
 
-                                <div class="clear"></div>      
+                                <div class="clear"></div>
 
 
                                 <div class="post_comments">
@@ -1961,7 +1971,7 @@
 
                                     </div><!-- .post_comments -->
 
-                                    <div class="clear"></div>      
+                                    <div class="clear"></div>
 
 
                                     <div class="comment_form">
@@ -1977,7 +1987,7 @@
                                                 <label for="name">Your Name</label>
                                                 <input type="text" name="name" class="form-control" id="inputSuccess" placeholder="Name*...">
                                             </p>
-                                            <p class="form-group" id="contact-email"> 
+                                            <p class="form-group" id="contact-email">
                                                 <label for="email">Your Email</label>
                                                 <input type="text" name="email" class="form-control" id="inputSuccess" placeholder="Email*...">
                                             </p>
@@ -1989,7 +1999,7 @@
                                             <input type="reset" name="reset" value="CLEAR" class="reset">
                                             <!--<input type="submit" name="submit" value="Post Comment" class="submit">-->
                                             <button class="submit" data-toggle="modal" data-target=".bs-example-modal-sm">Post Comment</button>
-                                        </form>                        
+                                        </form>
                                         <div class="clear"></div>
 
                                     </div>
@@ -2040,7 +2050,7 @@
 
                                             <!-- .contact -->
                                             <div id="contact" class="content_2">
-                                                
+
                                         <h1 class="h-bloc">Contact - Contact Me</h1>
 
 
@@ -2048,7 +2058,7 @@
 
                                             <div class="col-lg-12">
                                                 <div id="map"></div>
-                                            </div>  
+                                            </div>
 
                                             <div class="col-lg-12">
                                                 <div class="row" id="contact-user">
@@ -2081,7 +2091,7 @@
                                                             <div class="clear"></div>
                                                         </div>
 
-                                                    
+
 
                                                             <div id="profile_social">
                                                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -2091,7 +2101,7 @@
                                                                 <a href="#"><i class="fa fa-foursquare"></i></a>
                                                                 <div class="clear"></div>
                                                             </div>
-                                              
+
 
 
                                                     </div>
@@ -2115,7 +2125,7 @@
                                                                     <label for="name">Your Name</label>
                                                                     <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
                                                                 </p>
-                                                                <p class="form-group" id="contact-email"> 
+                                                                <p class="form-group" id="contact-email">
                                                                     <label for="email">Your Email</label>
                                                                     <input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
                                                                 </p>
@@ -2136,7 +2146,7 @@
                                                         <!-- /Contact Form -->
                                                     </div>
                                                 </div>
-                                            </div>  
+                                            </div>
 
 
 
@@ -2144,7 +2154,7 @@
                                             <!-- End .contact -->
 
                                         </div>
-                                        <!-- End #resp-tabs-container --> 
+                                        <!-- End #resp-tabs-container -->
 
                                     </div><!-- End verticalTab -->
 
@@ -2186,7 +2196,7 @@
 
                 </ul>
             </div>
-            <div> 
+            <div>
 
                 <h3 class="layouts">Profile Image</h3>
                 <div id="show">
@@ -2203,7 +2213,7 @@
                 </div>
 
 
-                
+
                 <h3 class="layouts">Page Builder</h3>
                 <div id="show">
                     <div class="clean-check" style="padding-left: 30px;">
@@ -2211,16 +2221,16 @@
                         <input type="radio" id="pb1" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard"   />
                         <label for="pb1"><span></span>Style 1</label>
 
-                        <input type="radio" id="pb2" name="page_builder" value="page-builder-2.html"  />
+                        <input type="radio" id="pb2" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard/page-builder-2.php" checked />
                         <label for="pb2"><span></span>Style 2</label>
 
                         <input type="radio" id="pb3" name="page_builder" value="page-builder-3.html"  />
                         <label for="pb3"><span></span>Style 3</label>
 
-                        <input type="radio" id="pb4" name="page_builder" value="http://demo.flexy-codes.com/FlexyVcard/page-builder-4.php" checked />
+                        <input type="radio" id="pb4" name="page_builder" value="page-builder-4.html"  />
                         <label for="pb4"><span></span>Style 4</label>
                     </div>
-                </div>      
+                </div>
 
                 <h3 class="layouts">Page Animation</h3>
                 <div id="show">
@@ -2240,7 +2250,7 @@
                             <option value="fadeInLeft">fadeInLeft</option>
                             <option value="fadeInRight">fadeInRight</option>
                             <option value="fadeInUp">fadeInUp</option>
-                        </optgroup>      
+                        </optgroup>
                     </select>
 
                 </div>
@@ -2252,7 +2262,7 @@
 
 						<input type="radio" id="s1" name="layout" value="bg_color" checked="checked" />
                         <label for="s1"><span></span>Color</label>
-                        
+
                         <input type="radio" id="s2" name="layout" value="bg_slider" />
                         <label for="s2"><span></span>Slider</label>
 
@@ -2262,7 +2272,7 @@
 
             </div>
 
-            <div> 
+            <div>
                 <h3>Background Color</h3>
                 <ul class="colors-style bgsolid" id="bgsolid">
                     <li><a href="#" class="gray-bg"></a></li>
@@ -2271,9 +2281,9 @@
                     <li><a href="#" class="red-bg"></a></li>
                     <li><a href="#" class="yellow-bg"></a></li>
                 </ul>
-            </div> 
+            </div>
 
-            <div>  
+            <div>
                 <h3>Background Image</h3>
                 <ul class="colors-style bg" id="bg">
                     <li><a href="#" class="bg1"></a></li>
@@ -2301,27 +2311,27 @@
 
         <!-- Js | bootstrap -->
         <!-- Credits: http://getbootstrap.com/ -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
         <!-- Js | easyResponsiveTabs -->
         <!-- Credits: http://webtrendset.com/demo/easy-responsive-tabs/Index.html -->
-        <script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script> 
+        <script type="text/javascript" src="js/easyResponsiveTabs.min.js"></script>
 
         <!-- Js | jquery.cookie -->
-        <!-- Credits: https://github.com/carhartl/jquery-cookie --> 
-        <script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>	
+        <!-- Credits: https://github.com/carhartl/jquery-cookie -->
+        <script type="text/javascript" src="js/jsSwitcher/jquery.cookie.js"></script>
 
         <!-- Js | switcher -->
         <!-- Credits: http://themeforest.net/user/FlexyCodes -->
-        <script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>	
+        <script type="text/javascript" src="js/jsSwitcher/switcher.js"></script>
 
         <!-- Js | mCustomScrollbar -->
         <!-- Credits: http://manos.malihu.gr/jquery-custom-content-scroller -->
-        <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>		
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
         <!-- Js | gmaps -->
         <!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
-        
+
         <script type="text/javascript" src="js/gmaps.min.js"></script>
 
         <!-- Js | Js -->
@@ -2330,7 +2340,7 @@
 
         <!-- jquery | rotate and portfolio -->
         <!-- Credits: http://jquery.com -->
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="js/HeadImage.js"></script>
 
         <!-- jquery | prettyPhoto -->
@@ -2369,7 +2379,7 @@
 
             }
 
-            /* This function is called on mouse move and gets the mouse position. 
+            /* This function is called on mouse move and gets the mouse position.
              * It also calls the HeadImage function to display the correct image*/
             function getMousePosition(event) {
 
@@ -2384,6 +2394,7 @@
             }
 
         </script>
+
 
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

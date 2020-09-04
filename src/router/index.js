@@ -13,14 +13,14 @@ let router = new Router({
 router.beforeEach((to, from, next) => {
   iView.LoadingBar.start()
   // 如果不存在token 则跳转到登录页
-  if (!sessionStorage.token && to.path !== '/auth' && to.path !== '/app-download') {
+  /** if (!sessionStorage.token && to.path !== '/auth' && to.path !== '/app-download') {
     iView.Message.error('请先登录')
     next({
       path: '/auth'
     })
-  } else {
-    next()
-  }
+  } else { */
+  next()
+  // }
 })
 
 router.afterEach(to => {
